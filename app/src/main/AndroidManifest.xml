@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.shoppinglistapp"
+    android:windowSoftInputMode="adjustPan">
+
+    <application
+        android:name=".MyApplication"
+        android:allowBackup="false"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".ShoppingListSchedulerWizardActivity"
+            android:theme="@style/AppThemeNoActionBarWhiteNav">
+        </activity>
+        <activity
+            android:name=".ShoppingListAddRecipeActivity"
+            android:windowSoftInputMode="adjustPan"></activity>
+        <activity
+            android:name=".ShoppingListDetailsActivity"
+            android:theme="@style/AppThemeNoActionBarWhiteNav"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".ShoppingListListActivity"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/AppThemeNoActionBarWhiteNav"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".ShoppingListAddEditActivity"
+            android:parentActivityName=".MenuMakeListActivity"
+            android:theme="@style/AppThemeNoActionBarWhiteNav"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".ShoppingListAddProductActivity"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".MenuMakeListActivity"
+            android:theme="@style/AppThemeNoActionBar" />
+        <activity
+            android:name=".MealScheduleActivity"
+            android:launchMode="singleTop"
+            android:theme="@style/AppThemeNoActionBarWhiteNav" />
+        <activity
+            android:name=".MealProductAddActivity"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".MealListActivity"
+            android:launchMode="singleTop"
+            android:theme="@style/AppThemeNoActionBarWhiteNav"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".MenuMealsActivity"
+            android:theme="@style/AppThemeNoActionBar" />
+        <activity
+            android:name=".WelcomeActivity"
+            android:theme="@style/AppThemeNoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ProductAddEditActivity"
+            android:parentActivityName=".ProductListActivity" />
+        <activity
+            android:name=".ProductListActivity"
+            android:launchMode="singleTop"
+            android:theme="@style/AppThemeNoActionBarWhiteNav"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".MainActivity"
+            android:theme="@style/AppThemeNoActionBar" />
+        <activity
+            android:name=".MealAddEditActivity"
+            android:parentActivityName=".MealListActivity"
+            android:windowSoftInputMode="adjustPan" />
+    </application>
+
+</manifest>

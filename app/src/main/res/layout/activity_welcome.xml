@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:gravity="center"
+    tools:context=".WelcomeActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@mipmap/mainscreen"
+        android:scaleType="centerCrop" />
+    <LinearLayout
+        android:id="@+id/loadingPanel"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="match_parent"
+        android:gravity="center" >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/whiteOpacity75"
+            android:text="Initializing... Please wait "
+            android:gravity="center"
+            android:textSize="25dp"/>
+        <TextView
+            android:id="@+id/progressTxt"
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/whiteOpacity75"
+            android:text="Initializing... Please wait "
+            android:gravity="center"
+            android:textSize="25dp"/>
+
+
+        <ProgressBar
+            android:id="@+id/pgBar"
+            android:padding="30dp"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:max="100"
+            android:progress="100"
+
+            style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+
+            />
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>
